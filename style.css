@@ -81,10 +81,10 @@ body{
 }
 .question div{
     display: flex;
-     flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
-    width: 95%;
+    width: 95% ;
     margin: 0 auto;
 }
 .input_section label{

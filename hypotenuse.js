@@ -12,12 +12,20 @@ function calculateSumOfSquare(a, b) {
 }
   
 function calculateHypotenuse() {
+  if(!Number(base_value.value) || !Number(height_value.value)){
+    
+  }else if(Number(base_value.value) <= 0 ||Number(height_value.value) <=0){
+    return  result_section.innerText = "ENter valid data" 
+  }else {
     const sumOfSquares = calculateSumOfSquare(
       Number(base_value.value),
       Number(height_value.value)
     )
     const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
     result_section.innerText = "The length of hypotenuse is " + lengthOfHypotenuse;
+  }
+  
+  
   }
   
 submit_button.addEventListener("click", calculateHypotenuse);

@@ -12,10 +12,10 @@ function calculateSumOfSquare(a, b) {
 }
   
 function calculateHypotenuse() {
-  if(!Number(base_value.value) || !Number(height_value.value)){
-    
-  }else if(Number(base_value.value) <= 0 ||Number(height_value.value) <=0){
-    return  result_section.innerText = "ENter valid data" 
+  if(!base_value.value || !height_value.value){
+    return  result_section.innerText = "Enter valid data" 
+  }else if(base_value.value <= 0 ||height_value.value <=0){
+    return  result_section.innerText = "Enter valid data" 
   }else {
     const sumOfSquares = calculateSumOfSquare(
       Number(base_value.value),

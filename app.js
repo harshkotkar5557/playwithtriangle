@@ -9,6 +9,9 @@ submit_button.addEventListener('click',()=>{
     if(!angle1.value ||!angle2.value ||!angle3.value ){
         return result_section.innerHTML = "Invalid data 😶"
     }
+    if(angle1.value <= 0 ||angle2.value <= 0  || angle3.value <= 0  ){
+        return result_section.innerHTML = "Invalid data 😶"
+    }
     const angleTotal = Number(angle1.value)+ Number(angle2.value)+Number(angle3.value)
     if(angleTotal===180){
         return result_section.innerHTML = "Yay 😎! The angles form a triangle"

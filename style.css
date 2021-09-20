@@ -7,6 +7,7 @@
 body{
     font-family: 'Ubuntu', sans-serif;
 }
+
 .navbar_container{
     border-radius: 0.5rem;
     padding: 1rem;
@@ -19,7 +20,7 @@ body{
     font-weight: 700;
     letter-spacing: 1px;
     display: block;
-
+    color: white;
 }
 
 .navbar_container .options{
@@ -30,33 +31,54 @@ body{
     flex-wrap: wrap;
     margin: 0.5rem 0.2rem;
 }
+.back_btn{
+    position: absolute;
+    left: 10%;
+    border: 1px solid grey;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+}
+.back_btn a{
+    color: black;
+}
+.back_btn:hover{
+    background: rgb(245, 245, 245);
+}
 .item {
-    background: rgb(73, 73, 73);
+    background: #37a2ba;
     padding: 0.2rem;
     margin: 0.5rem;
-    border-radius: 0.3rem;
+    border-radius: 50%;
+    transform: scale(0.9);
 }
 .item:hover{
-    background: rgb(156, 153, 153);
+    background: #268ca3;
+    transform: scale(1);
 }
 
 .item a{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     padding: 0.5 0.8rem;
     margin: 0.2rem 0.5rem;
 }
 .container{
+    min-width: 300px;
     margin: 10vh auto;
     width: 70%;
     height: 100%;
-    box-shadow: 2px 2px 3px 2px rgb(197, 197, 197);
+    box-shadow: 0px 0px 3px 2px rgb(212, 212, 212);
     border-radius: 10px;
     padding: 1.5rem 2rem;
     text-align: center;
-    background: #3781ba;
+    background: #ffffff;
 }
 .container p{
     margin: 0.5rem 0;
@@ -76,7 +98,7 @@ body{
     border-radius: 0.5rem;
     margin: 0.45rem 0;
     width: 70%;
-    min-width: 280px;
+    min-width: 250px;
 }
 .question div{
     display: flex;
@@ -95,7 +117,7 @@ body{
     outline: none;
     border-radius: 0.2rem;
     padding: 0.3rem;
-    border: none;
+    border: 1px solid black;
 }
  button{
     background: black;
@@ -121,6 +143,15 @@ button:hover{
 .active{
     background: #ce2929;
 }
+
+
+.option_div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
 /* hiding arrows from input section */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
